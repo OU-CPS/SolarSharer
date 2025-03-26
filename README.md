@@ -2,7 +2,10 @@
 
 SolarSharer is a decentralized, multi-agent environment for simulating peer-to-peer solar energy trading across multiple houses, with the goal of making energy distribution fairer, more stable, and more sustainable. Built on an OpenAI Gym interface, it models the dynamic, decentralized nature of Virtual Power Plants (VPPs) and supports reward shaping, step/observation spaces, and action spaces tailored for P2P energy markets.
 
+SolarSharer stands out by effectively managing both the non-stationarity among multiple learning agents and the complexities of continuous action spaces—leading to significantly improved fairness, stability, and efficiency in decentralized solar energy trading.
+
 We provide a main environment file, `solar_sharer_env.py`, which contains the core logic—from the reward function to the reset and step methods. The accompanying MADDPG folder and experiments scripts illustrate how to train using Multi-Agent Deep Deterministic Policy Gradient, with pointers on hyperparameter tuning. In addition, the codebase shows how to adapt other RL algorithms such as PPO, Policy Gradient, Independent DQN, or even Round Robin scheduling. By following these steps, you can integrate any multi-agent RL method and extend the environment to tackle more sophisticated, nonstationary scenerios in VPP systems.
+
 
 ## 1. Overview
 #### 1.1. The SolarSharer Environment
