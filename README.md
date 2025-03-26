@@ -7,7 +7,7 @@ SolarSharer stands out by effectively managing both the non-stationarity among m
 We provide a main environment file, `solar_sharer_env.py`, which contains the core logic—from the reward function to the reset and step methods. The accompanying MADDPG folder and experiments scripts illustrate how to train using Multi-Agent Deep Deterministic Policy Gradient, with pointers on hyperparameter tuning. In addition, the codebase shows how to adapt other RL algorithms such as PPO, Policy Gradient, Independent DQN, or even Round Robin scheduling. By following these steps, you can integrate any multi-agent RL method and extend the environment to tackle more sophisticated, nonstationary scenerios in VPP systems.
 
 
-![Descriptive Alt Text](images/diagram.png)
+![Descriptive Alt Text](images/maddpg.png)
 
 ## 1. Overview
 #### 1.1. The SolarSharer Environment
