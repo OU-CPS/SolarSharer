@@ -9,8 +9,8 @@ We provide a main environment file, `solar_sharer_env.py`, which contains the co
 
 ![Descriptive Alt Text](Image/pipeline_green.png)
 
-## 1. Overview
-#### 1.1. The SolarSharer Environment
+## Overview
+#### 1. The SolarSharer Environment
 Location: `solar_sharer_env.py`
 
 Purpose: Simulates a group of residential solar prosumers and consumers, tracking each agent’s demand, solar generation, and potential trades.
@@ -33,7 +33,7 @@ Returns (new_observations, rewards, done, info) just like any other Gym environm
 
 Reward Function: A multi-objective formulation encouraging minimal grid reliance, active peer-to-peer participation, and fairness (via Jain’s Index).
 
-### 1.2. Multi-Agent RL
+### 2 Multi-Agent RL
 
 To demonstrate that **SolarSharer** works with different approaches, we include **separate folders** for each algorithm. Each folder contains:
 - **Training scripts** (e.g., `train.py`),
@@ -56,7 +56,7 @@ These files collectively implement the **Multi-Agent Deep Deterministic Policy G
 For **all other algorithms** (e.g., PPO, Policy Gradient, Independent DQN), their **training and evaluation scripts** are in their **respective folders** (e.g., `ppo/`, `pg/`, `IDQN/`). All these scripts are **based on** the structure of the **main** `train.py` (found in `experiments/`) and **mirror** its implementation style, but each uses a **different set of algorithms** or learning paradigms.
 
 
-3. Installation & Environment Setup
+### 3. Installation & Environment Setup
 Clone or copy the repository:
 
 bash
@@ -79,7 +79,7 @@ If you want to use CUDA, ensure PyTorch is installed with GPU support and that y
 
 If you see “No GPU detected” logs, it’ll run on CPU.
 
-# Extending `train.py` to Other Algorithms
+## Extending `train.py` to Other Algorithms
 
 Below is a concise explanation of how to modify `train.py` (or any similar script) to train **any new algorithm** on the **SolarSharer** environment.  
 
