@@ -33,14 +33,28 @@ Returns (new_observations, rewards, done, info) just like any other Gym environm
 
 Reward Function: A multi-objective formulation encouraging minimal grid reliance, active peer-to-peer participation, and fairness (via Jain’s Index).
 
-1.2. Multi-Agent RL
-We provide 4 training scripts that use this environment:
+### 1.2. Multi-Agent RL
 
-`train.py`: Uses a Multi-Agent Deep Deterministic Policy Gradient (MADDPG) implementation.
+To demonstrate that **SolarSharer** works with different approaches, we include **separate folders** for each algorithm. Each folder contains:
+- **Training scripts** (e.g., `train.py`),
+- **Agent definitions** (e.g., `maddpg.py`, `independent_dqn_agent.py`, etc.),
+- **Evaluation scripts** (e.g., `eval_independent_dqn.py`).
 
-`train_ppo.py`: Uses a Proximal Policy Optimization (PPO) variant adapted for multi-agent settings.
+#### Experiments Folder
+The **main training, evaluation, and testing files** reside under the `experiments/` directory. These files focus primarily on **MADDPG**. 
 
-You can switch algorithms or create new ones as long as you follow the Gym “Env” interface.
+#### MADDPG Folder
+Inside the `maddpg/` directory, you will find:
+- `maddpg.py`
+- `replay_buffer.py`
+- `distribution.py`
+- `tf_util.py`
+
+These files collectively implement the **Multi-Agent Deep Deterministic Policy Gradient** algorithm.
+
+#### Other Algorithms
+For **all other algorithms** (e.g., PPO, Policy Gradient, Independent DQN), their **training and evaluation scripts** are in their **respective folders** (e.g., `ppo/`, `pg/`, `IDQN/`). All these scripts are **based on** the structure of the **main** `train.py` (found in `experiments/`) and **mirror** its implementation style, but each uses a **different set of algorithms** or learning paradigms.
+
 
 3. Installation & Environment Setup
 Clone or copy the repository:
