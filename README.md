@@ -192,4 +192,9 @@ Introductory materials on **policy gradient** (and how you might adapt it for mu
 ### Other Relevant Sources
 - **Gymnasium (OpenAI Gym) Docs**: [gymnasium.farama.org](https://gymnasium.farama.org/)
 
+## Conclusion
+
+Thank you for exploring **SolarSharer** and its multi-agent reinforcement learning framework. We hope this environment and the accompanying training scripts help accelerate your research and development. If you have any questions, suggestions, or encounter any issues, please feel free to **open an issue** or **contact us directly** anany.p.gupta-1@ou.edu . We value your feedback. Thankyou!
+
+
 
