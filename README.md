@@ -80,7 +80,7 @@ If you want to use CUDA, ensure PyTorch is installed with GPU support and that y
 If you see “No GPU detected” logs, it’ll run on CPU.
 
 ### 4. Data
-We obtain our data from [**Pecan Street**]([https://www.pecanstreet.org/dataport/]). You can check out data processing files for cleaning up the extra columns fixing sensor issues.
+We obtain our data from [**Pecan Street**][https://www.pecanstreet.org/dataport/ ]. You can check out data processing files for cleaning up the extra columns fixing sensor issues.
 
 ## Extending `train.py` to Other Algorithms
 
