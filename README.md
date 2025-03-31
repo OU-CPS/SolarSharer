@@ -153,3 +153,43 @@ my_algorithm.train(batch_size=batch_size)
 Reuse any logging, plotting, or checkpoint code that fits your workflow.
 
 Because SolarSharer strictly follows Gym conventions, you only need to ensure that your new algorithm accepts the same observation, action, and reward structure used by train.py
+
+
+## Additional Resources for reference
+
+Below are links and articles that might help with **hyperparameter tuning**, **theoretical insights**, and **practical guidelines** for various multi-agent RL algorithms used within this project. Since our environment is **strictly designed for multi-agent settings**, be cautious when configuring parameters—many standard single-agent defaults may not apply directly.
+
+---
+
+### 1. Multi-Agent Deep Deterministic Policy Gradient (MADDPG)
+For an in-depth explanation or theoretical background:
+- **Official Documentation**: [github.com/openai/maddpg](https://github.com/openai/maddpg)
+- **Video Overview**: [YouTube - MADDPG Guide](https://youtu.be/tZTQ6S9PfkE?si=t5I1N9sI1l2FDNTJ)
+
+---
+
+### 2. Deep Q-Network (DQN)
+Helpful resources for **hyperparameter tuning** and practical DQN insights:
+- **PyTorch Tutorial**: [pytorch.org/tutorials DQN](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
+- **Extended Guide**: [pytorch.org/rl/stable/coding_dqn](https://pytorch.org/rl/stable/tutorials/coding_dqn.html)
+
+---
+
+### 3. Proximal Policy Optimization (PPO)
+For **implementation details** and **hyperparameter selection** in PPO:
+- **PyTorch Tutorial**: [pytorch.org/tutorials/intermediate/reinforcement_ppo.html](https://pytorch.org/tutorials/intermediate/reinforcement_ppo.html)
+- **Beginner-Friendly Repo**: [github.com/ericyangyu/PPO-for-Beginners](https://github.com/ericyangyu/PPO-for-Beginners)
+
+---
+
+### 4. Policy Gradient Methods
+Introductory materials on **policy gradient** (and how you might adapt it for multi-agent setups):
+- **OpenAI Spinning Up**: [spinningup.openai.com VPG](https://spinningup.openai.com/en/latest/algorithms/vpg.html)
+- **PyTorch Notebook**: [github.com/tsmatz RL tutorials (Policy Gradient)](https://github.com/tsmatz/reinforcement-learning-tutorials/blob/master/02-policy-gradient.ipynb)
+
+---
+
+### Other Relevant Sources
+- **Gymnasium (OpenAI Gym) Docs**: [gymnasium.farama.org](https://gymnasium.farama.org/)
+
+
